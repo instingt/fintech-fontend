@@ -1,0 +1,3 @@
+<h5 class="mb-1">{{task.title}} <ng-container *ngIf="task.completed">Completed</ng-container></h5>
+<p class="mb-1">{{task.description}}</p>
+<small appResolveUser>{{user | formatUser}}</small>

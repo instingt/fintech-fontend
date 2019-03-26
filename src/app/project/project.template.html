@@ -1,0 +1,8 @@
+<div class="card mb-4" *ngIf="project" appScale>
+  <div class="card-body">
+    <h5 class="card-title">{{project.name}}</h5>
+    <div class="list-group">
+      <app-task class="list-group-item list-group-item-action" [taskId]="taskId" *ngFor="let taskId of project.tasks"></app-task>
+    </div>
+  </div>
+</div>
